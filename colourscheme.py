@@ -6,8 +6,8 @@ class ColourScheme:
 
     # default constructor
     def __init__(self, pri, sec):
-        self.primary_colour = "white"
-        self.secondary_colour = "black"
+        self.primary_colour = pri
+        self.secondary_colour = sec
         self.template_img = Image("path/to/file")
 
 
