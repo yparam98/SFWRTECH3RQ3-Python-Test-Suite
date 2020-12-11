@@ -18,6 +18,12 @@ class Cart:
         self.item_list.add(listing)
         self.subtotal_cost += listing.total
 
+    def delete_from_cart(self, listing):
+        for entry in self.item_list.listings:
+            if listing.item.item_name == entry.listing.item.item_name:
+                self.item_list.listings.remove() # remove that element from list
+        return None
+
     def get_total_cost(self):
         return self.total_cost
 
@@ -26,5 +32,7 @@ class Cart:
 
     def get_tax_cost(self):
         return self.tax_cost
+
+
 
 
